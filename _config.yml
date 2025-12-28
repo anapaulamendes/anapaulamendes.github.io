@@ -1,13 +1,13 @@
 # Site settings
-title: Ana Paula Mendes
-description: "A tech blog to share about my career"
+title: anapaulamendes
+description: ""
 baseurl: ""
 url: ""
 
 # User settings
 username: ANA PAULA MENDES
 occupation: Senior Software Engineer
-user_title: Ana Paula Mendes
+user_title: anapaulamendes
 email: anapaula.ds.mendes@gmail.com
 github_username:  anapaulamendes
 linkedin_public_url: anapauladsmendes/
