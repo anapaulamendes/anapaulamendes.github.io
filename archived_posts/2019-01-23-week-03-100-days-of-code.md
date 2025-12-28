@@ -45,7 +45,7 @@ Day 21 - I studied how to write custom django-admin commands. In recent days I h
 - Reading and Writing CSV Files in Python link: https://realpython.com/python-csv/
 - Working with CSV files in Python: https://www.programiz.com/python-programming/working-with-csv-files
 - Manipulação de Arquivos CSV em Python: https://dadosedecisoes.com.br/manipulacao-de-arquivos-csv-em-python/
-- Ler e escrever arquivo csv com python nativo, csv, numpy e pandas: http://foobarspam.blogspot.com/2016/05/ler-e-escrever-arquivo-csv-com-python.html
+- Ler e escrever arquivo csv com python nativo, csv, numpy e pandas: https://foobarspam.blogspot.com/2016/05/ler-e-escrever-arquivo-csv-com-python.html
 - My repository of csv-python: https://github.com/anapaulamendes/csv-python
 - Tutorial SEO: https://www.seomarketing.com.br/tutorial-SEO.php
 - Writing custom  `django-admin`  commands: https://docs.djangoproject.com/en/2.1/howto/custom-management-commands/

@@ -47,6 +47,6 @@ Day 91 - I studied Algorithm Analysis, Function Growth, Division and Conquer.
 - Splicing code: [https://github.com/anapaulamendes/topics-of-bioinformatics/blob/master/splicing.py](https://github.com/anapaulamendes/topics-of-bioinformatics/blob/master/splicing.py)
 - The skyline problem: [https://briangordon.github.io/2014/08/the-skyline-problem.html](https://briangordon.github.io/2014/08/the-skyline-problem.html)
 - The Skyline Problem using Divide and Conquer algorithm: [https://www.geeksforgeeks.org/the-skyline-problem-using-divide-and-conquer-algorithm/](https://www.geeksforgeeks.org/the-skyline-problem-using-divide-and-conquer-algorithm/)
-- Find the skyline of a group of buildings: [http://www.interviewdruid.com/find-the-skyline-of-a-group-of-buildings/](http://www.interviewdruid.com/find-the-skyline-of-a-group-of-buildings/)
-- Skyline Problem: http://yokolet.com/2017/05/26/skyline-problem.html
+- Find the skyline of a group of buildings: [https://www.interviewdruid.com/find-the-skyline-of-a-group-of-buildings/](https://www.interviewdruid.com/find-the-skyline-of-a-group-of-buildings/)
+- Skyline Problem: https://yokolet.com/2017/05/26/skyline-problem.html
 - Design and Analysis of Algorithms: Cormen, T.H., Leiserson, C.E., Rivest, R.L. and Stein, C., 2009. Introduction to algorithms. MIT press.

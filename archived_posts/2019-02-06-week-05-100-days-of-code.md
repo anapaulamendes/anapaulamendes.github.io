@@ -48,7 +48,7 @@ Day 35 - I studied Tuples of Python and read these two articles: 'To Ruby From P
 - Colaboradados website: https://colaboradados.github.io/
 - axios: https://www.npmjs.com/package/axios
 - Getting Started With Axios: https://medium.com/codingthesmartway-com-blog/getting-started-with-axios-166cb0035237
-- How to Use Axios as Your HTTP Client: http://codeheaven.io/how-to-use-axios-as-your-http-client/
+- How to Use Axios as Your HTTP Client: https://codeheaven.io/how-to-use-axios-as-your-http-client/
 - How to Use RESTful APIs with Django: https://simpleisbetterthancomplex.com/tutorial/2018/02/03/how-to-use-restful-apis-with-django.html
 - Status Code: https://www.django-rest-framework.org/api-guide/status-codes/
 -  Tuplas: https://aprendendo-computacao-com-python.readthedocs.io/en/latest/capitulo_09.html
