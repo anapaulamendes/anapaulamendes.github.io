@@ -1135,9 +1135,27 @@ body {
 	height: 60px;
 }
 
+.header-post-nav {
+	display: flex;
+	gap: 2rem;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	padding: 0 1rem;
+}
+
+.header-post-nav a {
+	color: #fff;
+	text-decoration: none;
+	transition: all 0.25s ease;
+}
+
+.header-post-nav a:hover {
+	color: #cea4eb;
+}
+
 .header-post p {
 	margin: 0;
-	padding-top: 16px;
 	text-align: center;
 	color: #fff;
 	font-weight: 500;
