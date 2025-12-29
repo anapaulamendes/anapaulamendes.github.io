@@ -352,6 +352,164 @@ tbody#posts-idiom {
 	vertical-align: top;
 }
 
+.talks-table {
+	width: 50%;
+	max-width: var(--max-width-wide);
+	border-collapse: collapse;
+	margin: 1rem auto;
+}
+
+.talks-table th, .talks-table td {
+	border: 1px solid #ccc;
+	padding: 0.5rem;
+	text-align: left;
+	font-family: courier, courier new, serif;
+	font-weight: 300;
+	font-size: 1.125rem;
+	line-height: 1.5;
+}
+
+.talks-table th {
+	background-color: #f2f2f2;
+	font-weight: 800;
+}
+
+.talks-table tr:nth-child(even) {
+	background-color: #f9f9f9;
+}
+
+/* Mobile: transformar tabela em blocos empilhados para evitar overflow */
+@media (max-width: 600px) {
+	.talks-table {
+		width: 100%;
+		border: 0;
+	}
+
+	.talks-table thead {
+		display: none; /* esconder cabeçalho */
+	}
+
+	.talks-table tbody,
+	.talks-table tr {
+		display: block;
+		width: 100%;
+		margin-bottom: 0.75rem;
+		background: transparent;
+		border: 1px solid var(--color-border-light);
+		border-radius: var(--border-radius-sm);
+		padding: 0.35rem;
+	}
+
+	.talks-table td {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		padding: 0.4rem 0.5rem;
+		border: 0;
+		border-bottom: 1px dashed var(--color-border);
+		white-space: normal;
+		font-size: 1rem;
+	}
+
+	.talks-table td:last-child {
+		border-bottom: 0;
+	}
+
+	/* rótulos à esquerda usando nth-child — não requer alteração no HTML */
+	.talks-table td:nth-child(1):before { content: "Event"; font-weight: 700; margin-right: .5rem; }
+	.talks-table td:nth-child(2):before { content: "Year"; font-weight: 700; margin-right: .5rem; }
+	.talks-table td:nth-child(3):before { content: "Title"; font-weight: 700; margin-right: .5rem; }
+
+	.talks-table td:before {
+		display: inline-block;
+		min-width: 5.5rem;
+		color: var(--color-text-muted);
+	}
+
+	.talks-table td a {
+		display: inline-block;
+		text-decoration: none;
+		color: inherit;
+		overflow-wrap: anywhere;
+		word-break: break-word;
+		max-width: calc(100% - 6rem);
+		text-align: right;
+	}
+}
+
+/* Ajustes finos de tipografia para manter alinhamento em mobile */
+@media (max-width: 600px) {
+	.talks-table td,
+	.talks-table th {
+		font-size: 0.95rem;
+		line-height: 1.35;
+	}
+
+	.talks-table td a {
+		font-size: 0.95rem;
+		line-height: 1.35;
+	}
+}
+
+@media (max-width: 420px) {
+	.talks-table td,
+	.talks-table th {
+		font-size: 0.9rem;
+		line-height: 1.25;
+	}
+
+	.talks-table td a {
+		font-size: 0.9rem;
+		line-height: 1.25;
+	}
+
+	.talks-table td:before {
+		min-width: 4.5rem; /* reduz espaço reservado para rótulos */
+	}
+}
+
+/* ============================================================
+   TALKS TABLE — RESPONSIVIDADE
+   Ajustes para evitar overflow horizontal em telas pequenas
+   ============================================================ */
+.talks-table {
+	table-layout: auto;
+	max-width: 100%;
+}
+
+.talks-table th,
+.talks-table td {
+	white-space: normal; /* permitir quebra de linha dentro das células */
+}
+
+.talks-table td a {
+	overflow-wrap: anywhere; /* quebra URLs longas quando necessário */
+	word-break: break-word;
+}
+
+@media (max-width: 900px) {
+	.talks-table {
+		width: 100%;
+		margin: 0.75rem auto;
+	}
+
+	.talks-table th,
+	.talks-table td {
+		padding: 0.5rem 0.625rem;
+		font-size: 1rem;
+		line-height: 1.4;
+	}
+}
+
+@media (max-width: 420px) {
+	/* Em telas muito pequenas, reduzir espaçamentos para caber melhor */
+	.talks-table th,
+	.talks-table td {
+		padding: 0.4rem 0.5rem;
+		font-size: 0.95rem;
+	}
+}
+
 /* ============================================================
    ELEMENTOS DE LISTA
    ============================================================ */
@@ -968,41 +1126,6 @@ body.search-overlay:after {
 	border-radius: 50%
 }
 
-.aboutme .recent {
-	list-style: none
-}
-
-.aboutme .post-title:before {
-	content: ""
-}
-
-.aboutme h2:hover {
-	background-color: #cea4eb
-}
-
-.aboutme li p {
-	font-size: 1rem;
-	font-weight: bold;
-	color: #7100ff;
-	margin-bottom: 7px;
-	position: relative;
-}
-
-.aboutme li p:before {
-	content: "|>";
-	font-size: 0.9rem;
-	font-weight: bold;
-	color: #000;
-	position: absolute;
-	left: -10px;
-	transition: all .2s
-}
-
-.aboutme li p:hover:before {
-	-webkit-transform: translateX(-10px);
-	transform: translateX(-10px)
-}
-
 html,
 body {
 	height: 100%
@@ -1142,6 +1265,41 @@ body {
 	justify-content: center;
 	height: 100%;
 	padding: 0 1rem;
+}
+
+/* Header-post nav responsivo: empilha e reduz fonte em telas pequenas */
+@media (max-width: 600px) {
+	.header-post-nav {
+		flex-direction: column;
+		gap: 0.35rem;
+		padding: 0.5rem 0.75rem;
+	}
+
+	.header-post-nav a {
+		padding: 0;
+		width: 100%;
+		text-align: center;
+	}
+
+	.header-post-nav a p {
+		margin: 0;
+		font-size: 0.95rem;
+		line-height: 1.2;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	header.header-post {
+		height: auto;
+		padding: 0.5rem 0;
+	}
+}
+
+@media (max-width: 420px) {
+	.header-post-nav a p {
+		font-size: 0.9rem;
+	}
 }
 
 .header-post-nav a {
@@ -1298,7 +1456,6 @@ body {
 }
 
 .post-content h2:before {
-	content: '##';
 	font-size: 1.563rem
 }
 
@@ -1371,6 +1528,167 @@ body {
 }
 
 .post-content .about_perfil {
+	width: 100px
+}
+
+/* ============================================================
+   COMPONENTE: ABOUT CONTENT
+   ============================================================ */
+.about-content {
+	padding: 1rem 0;
+}
+
+.about-content img {
+	max-width: 100%;
+	margin: 1.875rem auto;
+	display: block
+}
+
+.about-content p,
+.about-content h1,
+.about-content h2,
+.about-content h3,
+.about-content h4,
+.about-content ul,
+.about-content ol,
+.about-content .tags,
+.about-content iframe {
+	max-width: 50rem;
+	padding: 0 1.25rem;
+	margin: 0 auto 1.875rem;
+	font-family:courier, courier new, serif;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 1.2rem;
+	line-height: 1.8;
+}
+
+.about-content p,
+.about-content li {
+	color: #333;
+}
+
+.about-content p code,
+.about-content li code {
+	color: #615576
+}
+
+.about-content a {
+	font-family:courier, courier new, serif;
+	font-weight: 300;
+	font-style: normal;
+	color: #000000;
+	text-decoration: none;
+	border-bottom: 1px solid #000000;
+}
+
+.about-content a:hover {
+	background-color: #cea4eb
+}
+
+.about-content iframe {
+	margin-top: 1.875rem;
+	width: 100%
+}
+
+.about-content #twitter-widget-0 {
+	margin: auto !important
+}
+
+.about-content h1,
+.about-content h2,
+.about-content h3,
+.about-content h4,
+.about-content h5 {
+	font-family:courier, courier new, serif;
+	font-weight: 800;
+	font-style: normal
+}
+
+.about-content h1 {
+	font-size: 1.875rem;
+	line-height: 1.4;
+}
+
+.about-content h2 {
+	font-size: 1.375rem;
+	line-height: 1.4;
+	text-align: center;
+}
+
+.about-content h2:before {
+	font-size: 1.563rem
+}
+
+.about-content h3 {
+	font-size: 1.125rem;
+	line-height: 1.4;
+}
+
+.about-content ul,
+.about-content ol {
+	padding-left: 2.5rem
+}
+
+.about-content ul.post-list {
+	padding: 0;
+}
+
+.about-content blockquote {
+	*zoom: 1;
+	width: auto;
+	max-width: 45.625rem;
+	float: none;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 0;
+	padding-right: 0;
+	border-left: .313rem solid #000000;
+	padding: 0 1.875rem;
+	margin: 3.125rem auto;
+}
+
+.about-content blockquote:before,
+.about-content blockquote:after {
+	content: '';
+	display: table
+}
+
+.about-content blockquote:after {
+	clear: both
+}
+
+.about-content blockquote p {
+	color: rgba(0, 0, 0, 0.6);
+	margin: 0;
+}
+
+.about-content hr {
+	*zoom: 1;
+	width: auto;
+	max-width: 47.5rem;
+	float: none;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 0;
+	padding-right: 0;
+	border: 1px solid #f2f2f2;
+	margin: 50px auto
+}
+
+.about-content hr:before,
+.about-content hr:after {
+	content: '';
+	display: table
+}
+
+.about-content hr:after {
+	clear: both
+}
+
+.about-content .about_perfil {
 	width: 100px
 }
 
@@ -1654,8 +1972,7 @@ pre span {
 	font-size: 1.875rem
 }
 
-p.description {
-	font-size: 0.9rem;
+.aboutme {
 	text-align: justify;
 }
 
@@ -1857,13 +2174,6 @@ th.idiom {
 	}
 	pre code {
 		overflow-x: scroll
-	}
-	.aboutme li p {
-		font-size: 0.9rem;
-	}
-
-	.aboutme li p:before {
-		font-size: 0.9rem;
 	}
   td {
     display: block;
