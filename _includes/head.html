@@ -22,7 +22,12 @@
   <meta property="og:site_name" content="{{ site.title }}">
 
   <!-- Favicon -->
-  <link rel="shortcut icon" href="{{ site.profile_picture }}" type="image/x-icon" />
+  <!-- Prefer explicit favicon at root to satisfy browsers requesting /favicon.ico -->
+  <link rel="icon" href="{{ '/favicon.ico' | prepend: site.baseurl }}" />
+  <link rel="shortcut icon" href="{{ '/favicon.ico' | prepend: site.baseurl }}" type="image/x-icon" />
+
+  <!-- Existing profile-picture fallbacks -->
+  <link rel="icon" href="{{ site.profile_picture }}" />
 
   <!-- Apple Touch Icons -->
   <link rel="apple-touch-icon" href="{{ site.profile_picture }}" />
