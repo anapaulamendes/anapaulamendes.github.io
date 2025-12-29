@@ -1,11 +1,9 @@
 ---
 layout: post
-title:  "Sobre meus 100 dias de código"
-image: 'https://media.giphy.com/media/3o7abJW5ZuiByDelji/giphy.gif'
+title:  Sobre meus 100 dias de código
 date: 2019-04-13 15:00:00
-idiom: "portuguese"
 categories:
-- Portuguese
+- 100 Days Of Code
 ---
 
 ![Mulher maravilha](https://media.giphy.com/media/3o7abJW5ZuiByDelji/giphy.gif)

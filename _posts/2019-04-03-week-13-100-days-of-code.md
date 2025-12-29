@@ -1,17 +1,7 @@
 ---
 layout: post
-title:  "Week 13 - 100 Days of Code"
-image: 'https://media.giphy.com/media/NRa7dRkMlVZRE5HUU4/giphy.gif'
+title:  Week 13 - 100 Days of Code
 date: 2019-04-03 15:00:00
-created: 2019/04/03
-idiom: "english"
-by: Ana Paula Mendes
-tags:
-- 100DaysOfCode
-- Django
-- Python
-- Code
-description: ''
 categories:
 - 100 Days Of Code
 ---

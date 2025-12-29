@@ -1,17 +1,7 @@
 ---
 layout: post
-title:  "Week 03 - 100 Days of Code"
-image: 'https://media.giphy.com/media/11JTxkrmq4bGE0/giphy.gif'
+title:  Week 03 - 100 Days of Code
 date: 2019-01-23 15:00:00
-created: 2019/01/23
-idiom: "english"
-by: Ana Paula Mendes
-tags:
-- 100DaysOfCode
-- Django
-- Python
-- Code
-description: ''
 categories:
 - 100 Days Of Code
 ---
@@ -50,4 +40,3 @@ Day 21 - I studied how to write custom django-admin commands. In recent days I h
 - Tutorial SEO: https://www.seomarketing.com.br/tutorial-SEO.php
 - Writing custom  `django-admin`  commands: https://docs.djangoproject.com/en/2.1/howto/custom-management-commands/
 - How to Create Custom Django Management Commands: https://simpleisbetterthancomplex.com/tutorial/2018/08/27/how-to-create-custom-django-management-commands.html
-- My repository of django-polls with custom commands: https://github.com/anapaulamendes/django-polls-tutorial/tree/master/polls/management/commands

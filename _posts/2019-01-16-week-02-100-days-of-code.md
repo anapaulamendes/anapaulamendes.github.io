@@ -1,17 +1,7 @@
 ---
 layout: post
-title:  "Week 02 - 100 Days of Code"
-image: 'https://media.giphy.com/media/wpoLqr5FT1sY0/giphy.gif'
+title:  Week 02 - 100 Days of Code
 date: 2019-01-16 15:00:00
-created: 2019/01/16
-idiom: "english"
-by: Ana Paula Mendes
-tags:
-- 100DaysOfCode
-- Django
-- Python
-- Code
-description: ''
 categories:
 - 100 Days Of Code
 ---

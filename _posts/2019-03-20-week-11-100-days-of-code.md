@@ -1,17 +1,7 @@
 ---
 layout: post
-title:  "Week 11 - 100 Days of Code"
-image: 'https://media.giphy.com/media/FPbnShq1h1IS5FQyPD/giphy.gif'
+title:  Week 11 - 100 Days of Code
 date: 2019-03-20 15:00:00
-created: 2019/03/20
-idiom: "english"
-by: Ana Paula Mendes
-tags:
-- 100DaysOfCode
-- Django
-- Python
-- Code
-description: ''
 categories:
 - 100 Days Of Code
 ---

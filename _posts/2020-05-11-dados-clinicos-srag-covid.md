@@ -1,13 +1,10 @@
 ---
 layout: post
 title:  "Datasets clínicos sobre SRAG e COVID-19"
-image: 'https://cdn.pixabay.com/photo/2020/03/19/21/35/covid-4948866_960_720.jpg'
 date: 2020-05-11 10:00:00
 categories:
-- Portuguese
+- Data
 ---
-
-![enter image description here](https://cdn.pixabay.com/photo/2020/03/19/21/35/covid-4948866_960_720.jpg)
 
 Neste post reuni alguns repositórios/bases de dados com dados clínicos sobre SRAG e COVID-19.
 

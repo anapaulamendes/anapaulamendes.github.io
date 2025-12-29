@@ -1,17 +1,7 @@
 ---
 layout: post
-title:  "Week 04 - 100 Days of Code"
-image: 'https://media.giphy.com/media/3ohs88bcBbid83GaIg/giphy.gif'
+title:  Week 04 - 100 Days of Code
 date: 2019-01-30 15:00:00
-created: 2019/01/30
-idiom: "english"
-by: Ana Paula Mendes
-tags:
-- 100DaysOfCode
-- Django
-- Python
-- Code
-description: ''
 categories:
 - 100 Days Of Code
 ---
@@ -46,6 +36,5 @@ Day 28 - I read this wonderful post: 'The 7 Myths of Learning to Code' and I con
 - How to Create a Change Password View: https://simpleisbetterthancomplex.com/tips/2016/08/04/django-tip-9-password-change-form.html
 - AuthenticationForm Custom Login Policy: https://simpleisbetterthancomplex.com/tips/2016/08/12/django-tip-10-authentication-form-custom-login-policy.html
 - FreeCodeCamp: https://learn.freecodecamp.org/
-- Donate me a coffee: https://ko-fi.com/anapaulamendes
 - The 7 Myths of Learning to Code: https://dev.to/stephsmithio/the-7-myths-of-learning-to-code-1b2p
 - Colaboradados repository: https://github.com/colaboradados/colaboradados.github.io

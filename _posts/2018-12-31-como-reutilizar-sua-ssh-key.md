@@ -1,10 +1,9 @@
 ---
 layout: post
-title:  "Como reutilizar sua SSH Key"
-image: ''
+title:  Como reutilizar sua SSH Key
 date: 2018-12-31 15:00:00
 categories:
-- Portuguese
+- Tips
 ---
 
 ![Um gatinho digitando em um computador, sentado em uma cadeirinha](https://media.giphy.com/media/13HBDT4QSTpveU/giphy.gif)
@@ -21,21 +20,28 @@ Já no seu novo ambiente sem as chaves, você vai seguir os seguintes passos:
 
 Copie sua pasta .ssh de onde você salvou e cole na home do seu ambiente novo:
 
-> Quer fazer pelo terminal? Abaixo o comando para copiar e colar a
-> pasta.
->
-> cp caminho_do_arquivo caminho_de_destino
+Quer fazer pelo terminal? Abaixo o comando para copiar e colar a
+pasta.
+
+```
+cp caminho_do_arquivo caminho_de_destino
+```
 
 Já com sua pasta .ssh em sua nova home, verifique se todos os arquivos estão dentro da pasta certinho para prosseguir. Agora vamos alterar as permissões das chaves:
+
 ```
 sudo chmod 600 ~/.ssh/id_rsa
 sudo chmod 600 ~/.ssh/id_rsa.pub
 ```
+
 Pronto? Agora vamos inicializar o ssh-agent em background:
+
 ```
 eval $(ssh-agent -s)
 ```
+
 E pra finalizar vamos fazer o ssh-agent realmente utilizar a sua SSH Key que foi copiada:
+
 ```
 ssh-add ~/.ssh/id_rsa
 ```

@@ -1,10 +1,9 @@
 ---
 layout: post
-title:  "Começando com Python"
-image: ''
+title:  Começando com Python
 date:   2018-01-08 10:00:01
 categories:
-- Portuguese
+- Tips
 ---
 
 ### Aprendendo para ensinar, a melhor forma de programar!

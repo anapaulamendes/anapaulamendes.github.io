@@ -1,17 +1,7 @@
 ---
 layout: post
-title:  "Week 14 - 100 Days of Code"
-image: 'https://media.giphy.com/media/1PMVNNKVIL8Ig/giphy.gif'
+title:  Week 14 - 100 Days of Code
 date: 2019-04-12 15:00:00
-created: 2019/04/12
-idiom: "english"
-by: Ana Paula Mendes
-tags:
-- 100DaysOfCode
-- Django
-- Python
-- Code
-description: ''
 categories:
 - 100 Days Of Code
 ---

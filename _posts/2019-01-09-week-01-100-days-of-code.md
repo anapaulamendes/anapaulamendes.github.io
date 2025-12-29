@@ -1,17 +1,7 @@
 ---
 layout: post
 title:  "Week 01 - 100 Days of Code"
-image: 'https://media.giphy.com/media/LHZyixOnHwDDy/giphy.gif'
 date: 2019-01-09 15:00:00
-created: 2019/01/09
-idiom: "english"
-by: Ana Paula Mendes
-tags:
-- 100DaysOfCode
-- Django
-- Python
-- Code
-description: ''
 categories:
 - 100 Days Of Code
 ---
@@ -41,17 +31,11 @@ I hope that sharing my advances during the challenge help and motivate others as
 ## Content links:
 
  - My site: https://anapaulamendes.github.io/
- - My Telegram Bot with Python and API:
-   https://github.com/anapaulamendes/telegram-bot-dog
  - Twitter API:
    https://developer.twitter.com/en/docs/api-reference-index
  - Django Rest Framework: https://www.django-rest-framework.org/
- - My code of DRF tutorial:
-   https://github.com/anapaulamendes/django-rest-framework-tutorial
  - Writing your first Django app:
    https://docs.djangoproject.com/en/2.1/intro/tutorial01/
- - My code of Django Polls Tutorial:
-   https://github.com/anapaulamendes/django-polls-tutorial
  - PEP 20 - The Zen of Python: https://www.python.org/dev/peps/pep-0020/
  - Advanced tutorial: How to write reusable apps:
    https://docs.djangoproject.com/en/2.1/intro/reusable-apps/
