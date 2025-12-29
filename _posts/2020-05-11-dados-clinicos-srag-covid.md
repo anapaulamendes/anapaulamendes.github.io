@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Datasets clínicos sobre SRAG e COVID-19"
+title: Datasets clínicos sobre SRAG e COVID-19
 date: 2020-05-11 10:00:00
 categories:
 - Data
